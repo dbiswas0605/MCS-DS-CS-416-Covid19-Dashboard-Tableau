@@ -15,121 +15,6 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='cases_by_age_group' inline='true' name='federated.0tjw2rv0rksn6817o52v50rhgvr2' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='cases_by_age_group' name='textscan.1l0xdq61udqf6u18ammsd02ldcf4'>
-            <connection class='textscan' directory='F:/OneDrive/MCS-DS/CS 416 Data Visualization (Summer 2021)/Week 4/MCS-DS-CS-416-Covid19-Dashboard-Tableau/Covid 19 Data' filename='cases_by_age_group.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1l0xdq61udqf6u18ammsd02ldcf4' name='cases_by_age_group.csv' table='[cases_by_age_group#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='Cases by Age Group' ordinal='0' />
-            <column datatype='real' name='F2' ordinal='1' />
-            <column datatype='integer' name='F3' ordinal='2' />
-            <column datatype='real' name='F4' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1l0xdq61udqf6u18ammsd02ldcf4' name='cases_by_age_group.csv' table='[cases_by_age_group#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='Cases by Age Group' ordinal='0' />
-            <column datatype='real' name='F2' ordinal='1' />
-            <column datatype='integer' name='F3' ordinal='2' />
-            <column datatype='real' name='F4' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[cases_by_age_group.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Cases by Age Group</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Cases by Age Group]</local-name>
-            <parent-name>[cases_by_age_group.csv]</parent-name>
-            <remote-alias>Cases by Age Group</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F2</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[F2]</local-name>
-            <parent-name>[cases_by_age_group.csv]</parent-name>
-            <remote-alias>F2</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F3</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[F3]</local-name>
-            <parent-name>[cases_by_age_group.csv]</parent-name>
-            <remote-alias>F3</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F4</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[F4]</local-name>
-            <parent-name>[cases_by_age_group.csv]</parent-name>
-            <remote-alias>F4</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Percent of cases' datatype='real' name='[F2]' role='measure' type='quantitative' />
-      <column caption='Count of cases' datatype='integer' name='[F3]' role='measure' type='quantitative' />
-      <column caption='Percent of cases in US' datatype='real' name='[F4]' role='measure' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='cases_by_age_group.csv' datatype='table' name='[__tableau_internal_object_id__].[cases_by_age_group.csv_3304BADEC5354DC09A1E738CFB0DC689]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='cases_by_age_group.csv' id='cases_by_age_group.csv_3304BADEC5354DC09A1E738CFB0DC689'>
-            <properties context=''>
-              <relation connection='textscan.1l0xdq61udqf6u18ammsd02ldcf4' name='cases_by_age_group.csv' table='[cases_by_age_group#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='string' name='Cases by Age Group' ordinal='0' />
-                  <column datatype='real' name='F2' ordinal='1' />
-                  <column datatype='integer' name='F3' ordinal='2' />
-                  <column datatype='real' name='F4' ordinal='3' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='deaths_by_age_group' inline='true' name='federated.0jm716m12o6tay10x7las0vcaho1' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -137,27 +22,64 @@
             <connection class='textscan' directory='F:/OneDrive/MCS-DS/CS 416 Data Visualization (Summer 2021)/Week 4/MCS-DS-CS-416-Covid19-Dashboard-Tableau/Covid 19 Data' filename='deaths_by_age_group.csv' password='' server='' />
           </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1l6zfn70wbjfuh1fznrsw1r73jb8' name='deaths_by_age_group.csv' table='[deaths_by_age_group#csv]' type='table'>
+      </connection>
+      <aliases enabled='yes' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='cases_by_age_group' inline='true' name='federated.0tjw2rv0rksn6817o52v50rhgvr2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cases by age group' name='textscan.08np4441wkfop91alovk40sc6iq7'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='F:/OneDrive/MCS-DS/CS 416 Data Visualization (Summer 2021)/Week 4/MCS-DS-CS-416-Covid19-Dashboard-Tableau/Covid 19 Data/Clean_dataset/cases by age group.csv' dataRefreshTime='' directory='F:/OneDrive/MCS-DS/CS 416 Data Visualization (Summer 2021)/Week 4/MCS-DS-CS-416-Covid19-Dashboard-Tableau/Covid 19 Data/Clean_dataset' filename='C:/Users/send2/AppData/Local/Temp/TableauTemp/0l0e7q00ikh3qp13814u113bt6kp/cases by age group.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Percent of cases' datatype='real' name='[F2]' role='measure' type='quantitative' />
+      <column caption='Count of cases' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <column caption='Percent of cases in US' datatype='real' name='[F4]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='cases by age group' inline='true' name='federated.0y1oys01927aph1gg7lzo14wvy2y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cases by age group' name='textscan.1n503zw0s36943127ljcs062ybd2'>
+            <connection class='textscan' directory='F:/OneDrive/MCS-DS/CS 416 Data Visualization (Summer 2021)/Week 4/MCS-DS-CS-416-Covid19-Dashboard-Tableau/Covid 19 Data/Clean_dataset' filename='cases by age group.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1n503zw0s36943127ljcs062ybd2' name='cases by age group.csv' table='[cases by age group#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='Age Group' ordinal='0' />
-            <column datatype='real' name='Percentage of deaths' ordinal='1' />
-            <column datatype='integer' name='Count of deaths' ordinal='2' />
-            <column datatype='real' name='Percent of US population' ordinal='3' />
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Age Group' ordinal='1' />
+            <column datatype='real' name='Percent of cases' ordinal='2' />
+            <column datatype='integer' name='Count of cases' ordinal='3' />
+            <column datatype='string' name='Percentage of deaths' ordinal='4' />
+            <column datatype='integer' name='Count of deaths' ordinal='5' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1l6zfn70wbjfuh1fznrsw1r73jb8' name='deaths_by_age_group.csv' table='[deaths_by_age_group#csv]' type='table'>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1n503zw0s36943127ljcs062ybd2' name='cases by age group.csv' table='[cases by age group#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='Age Group' ordinal='0' />
-            <column datatype='real' name='Percentage of deaths' ordinal='1' />
-            <column datatype='integer' name='Count of deaths' ordinal='2' />
-            <column datatype='real' name='Percent of US population' ordinal='3' />
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Age Group' ordinal='1' />
+            <column datatype='real' name='Percent of cases' ordinal='2' />
+            <column datatype='integer' name='Count of cases' ordinal='3' />
+            <column datatype='string' name='Percentage of deaths' ordinal='4' />
+            <column datatype='integer' name='Count of deaths' ordinal='5' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[deaths_by_age_group.csv]</parent-name>
+            <parent-name>[cases by age group.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -171,74 +93,103 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cases by age group.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
             <remote-name>Age Group</remote-name>
             <remote-type>129</remote-type>
             <local-name>[Age Group]</local-name>
-            <parent-name>[deaths_by_age_group.csv]</parent-name>
+            <parent-name>[cases by age group.csv]</parent-name>
             <remote-alias>Age Group</remote-alias>
-            <ordinal>0</ordinal>
+            <ordinal>1</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deaths_by_age_group.csv_97FB9178E49D4A859BA0654A121B8178]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Percentage of deaths</remote-name>
+            <remote-name>Percent of cases</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Percentage of deaths]</local-name>
-            <parent-name>[deaths_by_age_group.csv]</parent-name>
-            <remote-alias>Percentage of deaths</remote-alias>
-            <ordinal>1</ordinal>
+            <local-name>[Percent of cases]</local-name>
+            <parent-name>[cases by age group.csv]</parent-name>
+            <remote-alias>Percent of cases</remote-alias>
+            <ordinal>2</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deaths_by_age_group.csv_97FB9178E49D4A859BA0654A121B8178]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count of cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count of cases]</local-name>
+            <parent-name>[cases by age group.csv]</parent-name>
+            <remote-alias>Count of cases</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage of deaths</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Percentage of deaths]</local-name>
+            <parent-name>[cases by age group.csv]</parent-name>
+            <remote-alias>Percentage of deaths</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Count of deaths</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Count of deaths]</local-name>
-            <parent-name>[deaths_by_age_group.csv]</parent-name>
+            <parent-name>[cases by age group.csv]</parent-name>
             <remote-alias>Count of deaths</remote-alias>
-            <ordinal>2</ordinal>
+            <ordinal>5</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deaths_by_age_group.csv_97FB9178E49D4A859BA0654A121B8178]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Percent of US population</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Percent of US population]</local-name>
-            <parent-name>[deaths_by_age_group.csv]</parent-name>
-            <remote-alias>Percent of US population</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deaths_by_age_group.csv_97FB9178E49D4A859BA0654A121B8178]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <_.fcp.ObjectModelTableType.true...column caption='deaths_by_age_group.csv' datatype='table' name='[__tableau_internal_object_id__].[deaths_by_age_group.csv_97FB9178E49D4A859BA0654A121B8178]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cases by age group.csv' datatype='table' name='[__tableau_internal_object_id__].[cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='deaths_by_age_group.csv' id='deaths_by_age_group.csv_97FB9178E49D4A859BA0654A121B8178'>
+          <object caption='cases by age group.csv' id='cases by age group.csv_D17E1B9B2ECE444AA8EDBAFCE4A1BD10'>
             <properties context=''>
-              <relation connection='textscan.1l6zfn70wbjfuh1fznrsw1r73jb8' name='deaths_by_age_group.csv' table='[deaths_by_age_group#csv]' type='table'>
+              <relation connection='textscan.1n503zw0s36943127ljcs062ybd2' name='cases by age group.csv' table='[cases by age group#csv]' type='table'>
                 <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='string' name='Age Group' ordinal='0' />
-                  <column datatype='real' name='Percentage of deaths' ordinal='1' />
-                  <column datatype='integer' name='Count of deaths' ordinal='2' />
-                  <column datatype='real' name='Percent of US population' ordinal='3' />
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Age Group' ordinal='1' />
+                  <column datatype='real' name='Percent of cases' ordinal='2' />
+                  <column datatype='integer' name='Count of cases' ordinal='3' />
+                  <column datatype='string' name='Percentage of deaths' ordinal='4' />
+                  <column datatype='integer' name='Count of deaths' ordinal='5' />
                 </columns>
               </relation>
             </properties>
@@ -373,8 +324,8 @@
       <simple-id uuid='{A423A309-7A5D-42D4-B6F5-93F00998B23C}' />
     </worksheet>
   </worksheets>
-  <windows source-height='51'>
-    <window class='worksheet' name='Cases by Age'>
+  <windows source-height='72'>
+    <window class='worksheet' maximized='true' name='Cases by Age'>
       <cards>
         <edge name='left'>
           <strip size='243'>
@@ -394,11 +345,6 @@
             <card type='title' />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0tjw2rv0rksn6817o52v50rhgvr2].[none:Cases by Age Group:nk]' type='color' />
-          </strip>
-        </edge>
       </cards>
       <viewpoint>
         <highlight>
@@ -412,7 +358,7 @@
       </viewpoint>
       <simple-id uuid='{035D499B-392B-4EF2-96FC-134C214F3B8A}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 2'>
+    <window class='worksheet' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='300'>
